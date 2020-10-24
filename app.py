@@ -6,7 +6,7 @@ from sklearn.feature_extraction.text import CountVectorizer
 
 clf = load('filename.joblib')
 
-vocabulary = joblib.load('vectorizer')
+vocabulary = load('vectorizer')
 cv = CountVectorizer(vocabulary=vocabulary)
 
 
