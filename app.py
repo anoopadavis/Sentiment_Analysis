@@ -6,7 +6,10 @@ from sklearn.feature_extraction.text import CountVectorizer
 
 clf = load('filename.joblib')
 
-cv = CountVectorizer()
+vocabulary = joblib.load('vectorizer')
+cv = CountVectorizer(vocabulary=vocabulary)
+
+
 st.title("SENTIMENT ANALYSIS")
 image = Image.open('IMG-20200904-WA0251.jpg')
 st.image(image, width=800)
