@@ -17,3 +17,5 @@ to_pred = df.iloc[:, 0]
 result = clf.predict(cv.transform(to_pred))
 if(st.button('Predict')):
     st.write(result[0])
+    
+    
